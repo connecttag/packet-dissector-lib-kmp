@@ -6,23 +6,23 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.4"
+version = "1.0.5"
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 
     android {
         namespace = "org.connecttag.lib.packet.dissector"
-        compileSdk = 36
+        compileSdk = 37
         minSdk = 24
         compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
         }
     }
 
     jvm {
         compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
         }
     }
 
